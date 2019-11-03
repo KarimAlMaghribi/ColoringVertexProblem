@@ -46,4 +46,24 @@ public class TabuMap {
         }
         return vertexColoring;
     }
+
+
+
+    public boolean lookForElement ( int keyVertex ) throws Exception {
+
+        if ( map.containsKey( keyVertex )){
+            return true;
+        } else{
+            return false;
+        }
+    }
+
+    public int getColoringOfElement ( int keyVertex ) throws Exception {
+
+        if ( map.containsKey( keyVertex )){
+            return  map.get(keyVertex);
+        } else {
+            throw (new Exception("No such Vertex Color in TabuMap"));
+        }
+    }
 }

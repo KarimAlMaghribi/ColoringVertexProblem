@@ -1,9 +1,9 @@
 import java.lang.reflect.Array;
 
 public class Colors {
-
+    int[] color;
     public Colors ( int size_k_vertex) {
-        int[] color = this.fill_constructor(size_k_vertex);
+       this.color = this.fill_constructor(size_k_vertex);
     }
 
     // Für das Vertex Coloring eines Graphen wird ein Set aus k-Farben, gleich der Anzahl der Knoten vorbereitet.
@@ -18,4 +18,6 @@ public class Colors {
         return color;
 
     }
+
+
 }
