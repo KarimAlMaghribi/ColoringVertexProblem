@@ -10,10 +10,6 @@ public class TabuMap {
     Map<Integer, Integer> map = new HashMap<>();
 
 
-    public TabuMap(Map<Integer, Integer> map) {
-        this.map = map;
-    }
-
     public void insertElement (int[] vertexcoloring) throws Exception {
 
         if ( vertexcoloring.length == 2 ) {
