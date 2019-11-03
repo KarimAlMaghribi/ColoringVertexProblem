@@ -33,4 +33,17 @@ public class TabuMap {
         }
 
     }
+
+    public int[] searchForELement ( int keyVertex) throws Exception {
+
+        int [] vertexColoring = new int[2];
+
+        if ( map.containsKey( keyVertex )){
+            vertexColoring[0] = keyVertex;
+            vertexColoring[1] = map.get(keyVertex);
+        } else {
+            throw (new Exception("No such Vertex in TabuMap"));
+        }
+        return vertexColoring;
+    }
 }
