@@ -23,4 +23,14 @@ public class TabuMap {
         } else throw (new Exception("Wrong configuration of vertex coloring"));
 
     }
+
+    public void eraseElement ( int keyVertex ) throws Exception {
+
+        if ( map.containsKey( keyVertex )){
+            map.remove(keyVertex);
+        } else {
+            throw (new Exception("No such Vertex in TabuMap"));
+        }
+
+    }
 }
